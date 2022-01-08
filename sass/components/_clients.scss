@@ -1,0 +1,40 @@
+.company {
+  display: flex;
+  flex-basis: calc(100% / 6 - 150px);
+}
+
+.company > .company__item {
+  margin-right: 30px;
+}
+
+.company__icon {
+  fill: #afb1b8;
+  transition: fill 250ms var(--times-functional);
+
+  .company_link:hover &,
+  .company_link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.company_link {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color 250ms var(--times-functional);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+// .company_link:hover .company__icon,
+// .company_link:focus .company__icon {
+//   fill: var(--accent-color);
+// }
